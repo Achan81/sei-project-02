@@ -1,13 +1,3 @@
-# @baseUrl = https://ga-winebored.herokuapp.com
-
-# # GET ALL THE WINES
-# GET {{baseUrl}}/wines
-
-# ###
-# # GET SINGLE WINE 
-# GET {{baseUrl}}/wines/5fcd21b1eca2f440bdcec191
-
-
 
 @baseUrl = https://akabab.github.io/superhero-api/api/
 
@@ -17,6 +7,5 @@ GET {{baseUrl}}/all.json
 ###
 # GET SINGLE SUPERHERO
 GET {{baseUrl}}/id/1.json
-
 
 
