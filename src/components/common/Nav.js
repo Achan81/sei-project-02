@@ -41,10 +41,10 @@ function Nav() {
             <Link to="/characters" className="navbar-item">
               See all characters
             </Link>
+            <Link to="/ProfileCompare" className="navbar-item">
+              Compare Powerstats!
+            </Link>
           </div>
-
-
-
         </div>
       </div>
     </nav>

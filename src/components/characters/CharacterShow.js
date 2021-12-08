@@ -1,42 +1,43 @@
 import React from 'react'
 import { useParams } from 'react-router'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { getSingleCharacter } from '../../lib/api'
-
 
 import Error from '../common/Error'
 import Loading from '../common/Loading'
 
 function CharacterShow() {
-  const params = useParams()
+  // const params = useParams()
   const { characterId } = useParams()
-  console.log(params)
+  // const history = useHistory()
   const [character, setCharacter] = React.useState(null)
+  
   const [isError, setIsError] = React.useState(false)
   const isLoading = !character && !isError
-
+  
   React.useEffect(() => {
     const getData = async () => {
       try {
-        const res = await getSingleCharacter(characterId)
-        setCharacter(res.data)
+        const characterRes = await getSingleCharacter(characterId)
+        setCharacter(characterRes.data)
       } catch {
         setIsError(true)
       }
-
     }
     getData()
   }, [characterId])
   console.log('character', character)
-
+  // const handleCompareClick = () => {
+  //   history.push(`/characters/${characterId}/profileCompare`)
+  // }
   return (
-    <section className="section">
+    <section className="section is-half">
       <div className="container">
         {isError && <Error />}
         {isLoading && <Loading />}
         {character &&
           (
-            <div>
+            <div className="character">
               <h4 className="title has-text-centered">{character.name}</h4>
               <hr/>
 
@@ -45,8 +46,10 @@ function CharacterShow() {
                   <figure className="image">
                     <img src={character.images.lg} alt={character.name}/>
                   </figure>
+                  <Link to="/ProfileCompare">
+                    <button className="button is-fullwidth is-dark">Compare Powerstats</button>
+                  </Link>
                 </div>
-
 
                 <div className="columns">
                   <div className="column">
@@ -92,9 +95,9 @@ function CharacterShow() {
                       <h4 className="title is-6 has-text-centered">Race : {
                         character.appearance.race}</h4>
                       <h4 className="title is-6 has-text-centered">Height : {
-                        character.appearance.height}</h4>
+                        character.appearance.height[0]}</h4>
                       <h4 className="title is-6 has-text-centered">Weight : {
-                        character.appearance.weight}</h4>
+                        character.appearance.weight[0]}</h4>
                       <h4 className="title is-6 has-text-centered">Place of Birth : {
                         character.biography.placeOfBirth}</h4>
                       <h4 className="title is-6 has-text-centered">First Appearance : {
@@ -112,11 +115,9 @@ function CharacterShow() {
                 </div>
               </div>
             </div>
-            
           )}
         <hr/>  
       </div>
-      
     </section>
   ) 
 }

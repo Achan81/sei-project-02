@@ -5,7 +5,7 @@ import Nav from './components/common/Nav'
 
 import CharacterIndex from './components/characters/CharacterIndex'
 import CharacterShow from './components/characters/CharacterShow'
-
+import ProfileCompare from './components/characters/ProfileCompare'
 
 function App() {
   return (
@@ -24,7 +24,11 @@ function App() {
         <Route path="/characters">
           <CharacterIndex />
         </Route>
-      
+
+        <Route path="/ProfileCompare">
+          <ProfileCompare />
+        </Route>
+        
       </Switch>
     </BrowserRouter>
   )

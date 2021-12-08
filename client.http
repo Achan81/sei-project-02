@@ -9,3 +9,76 @@ GET {{baseUrl}}/all.json
 GET {{baseUrl}}/id/1.json
 
 
+
+ "alignment": "good"
+ "alignment": "bad"
+ "alignment": "-"
+
+ABC Studios
+Angel Salvadore
+Ant-Man
+Anti-Venom
+Anti-Vision
+Archangel
+Aztar
+Batgirl
+Batgirl III
+Batgirl V
+Batman II
+Blackracer
+Binary
+Boom Boom
+Dark Horse Comics
+Deadpool
+DC Comics
+Evil Deadpool
+Flash IV
+Gemini V
+George Lucas
+Giant-Man
+Goliath
+Icon Comics
+IDW Publishing
+Image Comics
+Impulse
+Iron Lad
+J. K. Rowling
+J. R. R. Tolkien
+Jean Grey
+Marvel Comics
+Microsoft
+Meltdown
+Ms Marvel II
+Nightwing
+Null
+NBC - Heroes
+Oracle
+Phoenix
+Power Man
+Power Woman
+Rebellion
+Red Hood
+Red Robin
+Robin II
+Robin III
+Rune King Thor
+Scorpion
+She-Thing
+Shueisha
+Sony Pictures
+South Park
+Speed Demon
+Spider-Carnage
+Spoiler
+Star Trek
+Superman Prime One-Million
+SyFy
+Tempest
+Titan Books
+Thunderbird II
+Toxin
+Universal Studios
+Venom III
+Vindicator II
+Wildstorm
+""

@@ -1,29 +1,45 @@
+§
+### PREP / SKETCH
+https://excalidraw.com/#json=463qRv9TCXy_sEpanEslb,aw3FAi-c9CwBaVlQHoh2VA
 
 ###DAY 01
-- home page
-- Navbar to navigate around
+- [X] home page
+- [X] Navbar to navigate around
 
-Pages
-- Home Page, route url "/" - basic landing page
-- Index page, router url "/wines",- shows ALL the wines
-- Show page, router url "/wines/:wineId" , shows a SINGLE wine in more detail
-
-- Error Handling on fetching, Show & Index page
-- FILTERS
-- SORT
+- [X] Home Page, route url "/" - basic landing page
+- [X] Index page, router url "/characters",- shows ALL the character cards
+- [X] Show page, router url "/characters/:characterId" , shows a SINGLE character in more detail
+- [X] Error Handling on fetching, Show & Index page
+- [X] STYLING started.
+- [X] Improve Navbar, make it responsive - done but don't really like it, seems a bit empty - would like more content.
 
 ###DAY02
-- STYLING
+- [ ] FILTERS - By Publisher
+- [X] FILTERS - By Alignment (Good/Bad)
+- [X] FILTERS - Search bar by Name (multi case)  
+- [X] characterShow // height/width array [0] fix
+- [X] SORT ***bulma visual set up
+- [ ] PROFILE COMPARISONS ******** (TRUMPS)
+- [ ] select (LEFT), random generator 
+- [X] Favicon.png (Superman added)
+- [X] fonts (added / but hidden from A.Chan version)
 
-- PROFILE COMPARISONS ******** (TRUMPS)
-- select (LEFT) , random generator 
+###DAY03
+- [X] FILTERS - By Publisher (Help needed because null object errored return)
+- [ ] PLAN A / PROFILE COMPARISONS PAGE set up (encountered difficulties... )
+- [X] PLAN B / POWER STATS to be added to INDEX CARDS to improve user experience  
 
 
+###TROUBLE SHOOTING
+- [ ] bulma styling on search and drop down - how to style so they stretch full width of page on desktop view, and same on mobile view. ~~
+- [X] CharacterShow - retrived data, how to space out height and width from bunching each other.
+- [X] loading="lazy" (does it work? see ).. maybe?
 
-- LIKE (local storage) *** if time 
+###EXTRA 
+- [ ] LIKE (local storage) *** if time 
+- [ ] Revisit this project to work on Profile Compare function and ideally turn into TRUMPS game.
 
- 
-- Improve a Navbar, make it responsive
+
 
 
 

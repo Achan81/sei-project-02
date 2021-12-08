@@ -1,7 +1,10 @@
-
 import { Link } from 'react-router-dom'
 
-function CharacterCard({ name, image, publisher, firstAppearance, characterId }) {
+function CharacterCard({ 
+  name, image, powerstatsIntelligence, powerstatsStrength, powerstatsSpeed,
+  powerstatsDurability, powerstatsPower, powerstatsCombat,firstAppearance, publisher,
+  characterId }) {
+
   return (
     <div 
       className="column is-one-fifth is-one-third-tablet"
@@ -16,10 +19,16 @@ function CharacterCard({ name, image, publisher, firstAppearance, characterId })
               <img src={image} alt={name} />
             </figure>
           </div>
-          <div className="card-content">
-            <p>{firstAppearance}</p>
+          <div className="card-content has-text-centered">
+            <h5 className="is-italic">{firstAppearance}</h5>
+            <h5 className="has-text-weight-semibold is-uppercase">({publisher})</h5>
             <hr/>
-            <h5>{publisher}</h5>
+            <h6>Intelligence : {powerstatsIntelligence}</h6>
+            <h6>Strength : {powerstatsStrength}</h6>
+            <h6>Speed : {powerstatsSpeed}</h6>
+            <h6>Durability : {powerstatsDurability}</h6>
+            <h6>Power : {powerstatsPower}</h6>
+            <h6>Combat : {powerstatsCombat}</h6>
           </div> 
         </div>
       </Link>
