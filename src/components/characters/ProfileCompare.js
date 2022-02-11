@@ -1,5 +1,18 @@
+
 function ProfileCompare() {
-  return <h1>THIS IS WHERE YOU WOULD COMPARE PROFILES :)</h1>
+  return (
+    <section className="dancing-spidey section is-half">  
+      <div className="title is-1 has-text-centered">
+        <h1>SORRY!</h1> 
+      </div>
+      <div className="title is-2 has-text-centered">
+        <h2>PAGE UNDER CONSTRUCTION</h2>
+      </div>
+      <p div className="title is-4 has-text-centered">THIS IS WHERE YOU WOULD COMPARE PROFILES</p>
+    
+    </section>
+
+  )
 }
 
 export default ProfileCompare
