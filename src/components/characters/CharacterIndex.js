@@ -87,8 +87,6 @@ function CharacterIndex() {
             <option>Image Comics</option>
             <option>Impulse</option>
             <option>Iron Lad</option>
-
-            
             <option>J. K. Rowling</option>
             <option>J. R. R. Tolkien</option>
             <option>Jean Grey</option>

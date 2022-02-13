@@ -38,7 +38,7 @@ function CharacterShow() {
         {character &&
           (
             <div className="character">
-              <h4 className="title has-text-centered">{character.name}</h4>
+              <div className="heading-name title has-text-centered is-uppercase has-text-weight-bold">{character.name}</div>
               <hr/>
 
               <div className="columns">
@@ -52,65 +52,47 @@ function CharacterShow() {
                 </div>
 
                 <div className="columns">
-                  <div className="column">
-                    <h2 className="title is-4 has-text-centered">Powerstats</h2> 
-                  
+                  <div className="column has-text-centered">
+                    <h2 className="title is-4 is-uppercase">Powerstats</h2> 
                     <div className="columns is-mobile">
-                      <div className="column"> Intelligence
-                        <h3 className="title is-4 has-text-centered">{
-                          character.powerstats.intelligence}</h3>
-                      </div>
 
-                      <div className="column"> Strength
-                        <h3 className="title is-4 has-text-centered">{
-                          character.powerstats.strength}</h3>
+                      <div className="column">Intelligence
+                        <div className="title is-4">{character.powerstats.intelligence}</div>
                       </div>
-                      <div className="column"> Speed
-                        <h3 className="title is-4 has-text-centered">{
-                          character.powerstats.speed}</h3>
+                      <div className="column">Strength
+                        <div className="title is-4">{character.powerstats.strength}</div>
                       </div>
-
-                      <div className="column"> Durability
-                        <h3 className="title is-4 has-text-centered">{
-                          character.powerstats.durability}</h3>
+                      <div className="column">Speed
+                        <div className="title is-4">{character.powerstats.speed}</div>
                       </div>
-
-                      <div className="column"> Power
-                        <h3 className="title is-4 has-text-centered">{
-                          character.powerstats.power}</h3>
+                      <div className="column">Durability
+                        <div className="title is-4">{character.powerstats.durability}</div>
                       </div>
-
-                      <div className="column"> Combat
-                        <h3 className="title is-4 has-text-centered">{
-                          character.powerstats.combat}</h3>
+                      <div className="column">Power
+                        <div className="title is-4">{character.powerstats.power}</div>
+                      </div>
+                      <div className="column">Combat
+                        <div className="title is-4">{character.powerstats.combat}</div>
                       </div>
                     </div> 
                     <hr/>
 
-                    <div className="column"> 
-                      <h4 className="title is-6 has-text-centered">Full Name : {
-                        character.biography.fullName}</h4>
-                      <h4 className="title is-6 has-text-centered">Gender : {
-                        character.appearance.gender}</h4>
-                      <h4 className="title is-6 has-text-centered">Race : {
-                        character.appearance.race}</h4>
-                      <h4 className="title is-6 has-text-centered">Height : {
-                        character.appearance.height[0]}</h4>
-                      <h4 className="title is-6 has-text-centered">Weight : {
-                        character.appearance.weight[0]}</h4>
-                      <h4 className="title is-6 has-text-centered">Place of Birth : {
-                        character.biography.placeOfBirth}</h4>
-                      <h4 className="title is-6 has-text-centered">First Appearance : {
-                        character.biography.firstAppearance}</h4>
-                      <h4 className="title is-6 has-text-centered">Publisher : {
-                        character.biography.publisher}</h4>
-                      <h4 className="title is-6 has-text-centered">Alignment : {
-                        character.biography.alignment}</h4>
-                      <h4 className="title is-6 has-text-centered">Group Affiliation : {
-                        character.connections.groupAffiliation}</h4>
-                      <h4 className="title is-6 has-text-centered">Relatives : {
-                        character.connections.relatives}</h4>
+                    <div className="column is-12 has-text-left"> 
+                      <div className="title is-6 pb-4">
+                        <div>Full Name : {character.biography.fullName}</div><br></br>
+                        <div>Gender : {character.appearance.gender}</div><br></br>
+                        <div>Race : {character.appearance.race}</div><br></br>
+                        <div>Height : {character.appearance.height[0]}</div><br></br>
+                        <div>Weight : {character.appearance.weight[0]}</div><br></br>
+                        <div>Place of Birth : {character.biography.placeOfBirth}</div><br></br>
+                        <div>First Appearance : {character.biography.firstAppearance}</div><br></br>
+                        <div>Publisher : {character.biography.publisher}</div><br></br>
+                        <div>Alignment : {character.biography.alignment}</div><hr></hr>
+                        <div>Group Affiliation : {character.connections.groupAffiliation}</div><br></br>
+                        <div>Relatives : {character.connections.relatives}</div><br></br>
+                      </div>
                     </div>
+                    
                   </div>        
                 </div>
               </div>
