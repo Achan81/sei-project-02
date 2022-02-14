@@ -1,14 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
-// .body {
-//   font-family: 'Bebas Neue', cursive;
-  // font-family: 'Bangers', cursive;
-// }
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 .bebas-font {
   font-family: 'Bebas Neue', cursive;
 }
+//* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 
 .card {
   height: 100%;
@@ -38,19 +34,12 @@ h3.card-header-title {
   color: white;
 }
 
-card-image {
-height: 50px;
-width: 50px;}
-
 .hero {
   background-image: url('https://justpressplay13.files.wordpress.com/2015/01/maxresdefault1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   text-shadow: black 2px 2px 4px;
-
-  // font-family: 'Bangers', cursive;
-  // letter-spacing: 2px;
 }
 
 .select {
@@ -63,9 +52,12 @@ color: black;
   justify-content: center;
 }
 
-
-.heading-name {
+.heading-space {
   letter-spacing: 5px;
+}
+
+.sub-space {
+  letter-spacing: 2px;
 }
 
 .dancing-spidey {
@@ -73,8 +65,5 @@ color: black;
   background-repeat: no-repeat;
   background-position: center;
 }
-
-
-
 
 @import '~bulma/bulma.sass';

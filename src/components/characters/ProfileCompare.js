@@ -9,9 +9,7 @@ function ProfileCompare() {
         <h2>PAGE UNDER CONSTRUCTION</h2>
       </div>
       <p div className="title is-4 has-text-centered">THIS IS WHERE YOU WOULD COMPARE PROFILES</p>
-    
     </section>
-
   )
 }
 

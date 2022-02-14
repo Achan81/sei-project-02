@@ -23,7 +23,7 @@ function Nav() {
   //*(bulma styling on navbar - navbar-burger is mediaquery-ready for tablet,phones)
 
   return (
-    <nav className="navbar is-black bebas-font heading-name"> 
+    <nav className="navbar is-black bebas-font heading-space"> 
       <div className="container">
         <div className="navbar-brand">
 

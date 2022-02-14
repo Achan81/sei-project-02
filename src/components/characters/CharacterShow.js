@@ -39,7 +39,7 @@ function CharacterShow() {
         {character &&
           (
             <div className="character">
-              <div className="heading-name title is-1 has-text-centered bebas-font has-text-weight-bold">{character.name}</div>
+              <div className="heading-space title is-1 has-text-centered bebas-font has-text-weight-bold">{character.name}</div>
               <hr/>
 
               <div className="columns">
@@ -48,13 +48,13 @@ function CharacterShow() {
                     <img src={character.images.lg} alt={character.name}/>
                   </figure>
                   <Link to="/ProfileCompare">
-                    <button className="button is-fullwidth is-dark bebas-font heading-name">Compare Powerstats</button>
+                    <button className="button is-fullwidth is-dark bebas-font heading-space">Compare Powerstats</button>
                   </Link>
                 </div>
 
                 <div className="columns bebas-font">
                   <div className="column has-text-centered">
-                    <h2 className="title is-4 bebas-font heading-name">Powerstats</h2> 
+                    <h2 className="title is-4 bebas-font heading-space">Powerstats</h2> 
                     <div className="columns is-mobile">
 
                       <div className="column">Intelligence
@@ -79,7 +79,7 @@ function CharacterShow() {
                     <hr/>
 
                     <div className="column is-12 has-text-left"> 
-                      <div className="title is-6 pb-4">
+                      <div className="title is-6 pb-4 sub-space">
                         <div>Full Name : {character.biography.fullName}</div><br></br>
                         <div>Gender : {character.appearance.gender}</div><br></br>
                         <div>Race : {character.appearance.race}</div><br></br>

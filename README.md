@@ -122,7 +122,7 @@ This was designed to be a clean looking page which would have the app name in th
 Using Bulma, we created a black nav bar to show the pages to the site.
 Whilst building the Navbar, we also set up the mobile responsive side of things / burger menu.
 
-![landingpage mobile responsive](/assets/01mobile.png)
+![landingpage mobile responsive](/assets/01mob.png)
 
 ```js
  return (
@@ -250,9 +250,8 @@ Publisher null in filter
 
 
 ___
-___
 ### PREP / SKETCH
-https://excalidraw.com/#json=463qRv9TCXy_sEpanEslb,aw3FAi-c9CwBaVlQHoh2VA
+
  
 ###DAY 01
 - [X] home page
@@ -286,8 +285,4 @@ https://excalidraw.com/#json=463qRv9TCXy_sEpanEslb,aw3FAi-c9CwBaVlQHoh2VA
 - [ ] bulma styling on search and drop down - how to style so they stretch full width of page on desktop view, and same on mobile view. ~~
 - [X] CharacterShow - retrived data, how to space out height and width from bunching each other.
 - [X] loading="lazy" (does it work? see ).. maybe?
- 
-###EXTRA
-- [ ] LIKE (local storage) *** if time
-- [ ] Revisit this project to work on Profile Compare function and ideally turn into TRUMPS game.
  

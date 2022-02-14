@@ -6,13 +6,18 @@ function CharacterCard({
   characterId }) {
 
   return (
-    <div 
-      className="column is-one-fifth is-one-third-tablet "
-    >
+    <div className="column 
+      is-full-mobile
+      is-half-tablet 
+      is-one-third-desktop
+      is-one-quarter-widescreen 
+      is-one-fifth-fullhd
+      ">
+      
       <Link to={`/characters/${characterId}`}>
-        <div className="card bebas-font">
+        <div className="card bebas-font sub-space">
           <div className="card-header">
-            <h3 className="card-header-title is-uppercase bebas-font heading-name">{name}</h3>
+            <h3 className="card-header-title is-uppercase bebas-font">{name}</h3>
           </div>
           <div className="card-image">
             <figure className="image image-is-1by1">
@@ -21,7 +26,7 @@ function CharacterCard({
           </div>
           <div className="card-content has-text-centered">
             <h5 className="is-italic">{firstAppearance}</h5>
-            <h5 className="has-text-weight-semibold is-uppercase">({publisher})</h5>
+            <h5 className="has-text-weight-semibold is-uppercase title is-5">({publisher})</h5>
             <hr/>
             <h6>Intelligence : {powerstatsIntelligence}</h6>
             <h6>Strength : {powerstatsStrength}</h6>
