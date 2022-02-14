@@ -65,7 +65,7 @@ Use the clone button to download the app source code.
 ### Planning:
 After being randomly paired into a breakout room for this project briefing, our initial thought process was to spend 10 minutes each researching existing free to use API’s that were interesting for both Harry and myself. We found that many available API’s were not free, or were for limited use which was unfortunate but understandable.
 <br></br>
-We found on a 3rd party free SuperHero API (731 individual characters) which we felt was inline with our interests. [**SuperHero API**](https://akabab.github.io/superhero-api/api// "here") (Featuring multiple universes SuperHeroes open-source REST API)
+We found on a 3rd party free SuperHero API (731 individual characters) which we felt was inline with our interests. [**SuperHero API**](https://akabab.github.io/superhero-api/api// "here") (Featuring multiple universes SuperHeroes open-source REST API).
 
 * We then studied the key deliverables needed for this project:
   * App to have multiple components (Index & Detail Show cards)
@@ -280,7 +280,7 @@ This method seemed appropriate for separating out character by the types of comi
 Probably the most obvious choice for character separation as per the app's title - Heroes & Villains (Good & Bad)
 
 * Searching by Name:\
-The most direct route for finding your desired character is spelling out the name into the Search bar and letting it filter only matching characters.
+The most direct route for finding your desired character is spelling out the name into the Search bar and letting it filter only matching characters
 
 The above filters & name search were created as below...
 
@@ -381,9 +381,9 @@ export default Error
 
 * Working with this API, we found that the data was not always complete for each character and ruined the consistency of data shown on the app
 
-* Index images load time - depending on the users bandwidth, we had a concern for the user experience when images would be loaded on the index. To make sure we minimise the load time, we used the smallest available API images for the index page.  After a little bit of research, we also tried implementing lazy loading where the image API is called. I am not 100% sure if it made any difference with and without it. 
+* Index images load time - depending on the users bandwidth, we had a concern for the user experience when images would be loaded on the index. To make sure we minimise the load time, we used the smallest available API images for the index page.  After a little bit of research, we also tried implementing lazy loading where the image API is called. I am not 100% sure if it made any difference with and without it 
 ```js
-image={character.images.sm} loading="lazy"
+  image={character.images.sm} loading="lazy"
 ``` 
 
 ## Wins:
@@ -408,6 +408,8 @@ image={character.images.sm} loading="lazy"
 * Learning to pair code and communicate clearly within a team
 * Learning how to pull data and use it how we wanted it to be used 
 * Planning ahead especially when working in a team as it vastly improves communication
+* Familiarising with what we have learnt so far
+* Testing out Bulma framework
 
 ## Future Content and Improvements:
 * Trumps game on Profile Compare page ([excalidraw sketch](#excalidraw-sketch "Goto excalidraw sketch"))
