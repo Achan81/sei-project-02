@@ -53,8 +53,6 @@ function CharacterIndex() {
     })
   }
 
-  // window.history.back()
-
   return (
     <><div className="level">
       <div className="control">
