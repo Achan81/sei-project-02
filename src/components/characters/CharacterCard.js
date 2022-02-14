@@ -10,9 +10,9 @@ function CharacterCard({
       className="column is-one-fifth is-one-third-tablet "
     >
       <Link to={`/characters/${characterId}`}>
-        <div className="card">
+        <div className="card bebas-font">
           <div className="card-header">
-            <h3 className="card-header-title is-uppercase">{name}</h3>
+            <h3 className="card-header-title is-uppercase bebas-font heading-name">{name}</h3>
           </div>
           <div className="card-image">
             <figure className="image image-is-1by1">

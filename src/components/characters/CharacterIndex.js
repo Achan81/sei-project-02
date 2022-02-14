@@ -53,11 +53,13 @@ function CharacterIndex() {
     })
   }
 
+  // window.history.back()
+
   return (
     <><div className="level">
       <div className="control">
-        <div className="select is-normal">
-          <select className="filter" onChange={handlePublisherFilter}>
+        <div className="select is-normal ">
+          <select className="filter bebas-font" onChange={handlePublisherFilter}>
             <option value="">Filter by Publisher</option>
             <option>ABC Studios</option>
             <option>Angel Salvadore</option>
@@ -133,7 +135,7 @@ function CharacterIndex() {
       
       <div className="control">
         <div className="select is-normal"> 
-          <select className="filter" onChange={handleFilter}>
+          <select className="filter bebas-font" onChange={handleFilter}>
             <option value="">Filter by Good or Bad</option>
             <option>Good</option>
             <option>Bad</option>
@@ -146,7 +148,7 @@ function CharacterIndex() {
       <div className="field has-addons"> 
         <div className="control is-loading"> 
           <input 
-            className="input is-rounded search"  
+            className="input is-rounded search bebas-font"  
             placeholder="Find Character by Name"
             onChange={handleSearch}
           />

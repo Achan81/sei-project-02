@@ -1,7 +1,7 @@
 
 function ProfileCompare() {
   return (
-    <section className="dancing-spidey section is-half">  
+    <section className="dancing-spidey section is-half bebas-font">  
       <div className="title is-1 has-text-centered">
         <h1>SORRY!</h1> 
       </div>

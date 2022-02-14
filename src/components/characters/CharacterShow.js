@@ -31,6 +31,7 @@ function CharacterShow() {
   //   history.push(`/characters/${characterId}/profileCompare`)
   // }
   return (
+
     <section className="section is-half">
       <div className="container">
         {isError && <Error />}
@@ -38,7 +39,7 @@ function CharacterShow() {
         {character &&
           (
             <div className="character">
-              <div className="heading-name title has-text-centered is-uppercase has-text-weight-bold">{character.name}</div>
+              <div className="heading-name title is-1 has-text-centered bebas-font has-text-weight-bold">{character.name}</div>
               <hr/>
 
               <div className="columns">
@@ -47,13 +48,13 @@ function CharacterShow() {
                     <img src={character.images.lg} alt={character.name}/>
                   </figure>
                   <Link to="/ProfileCompare">
-                    <button className="button is-fullwidth is-dark">Compare Powerstats</button>
+                    <button className="button is-fullwidth is-dark bebas-font heading-name">Compare Powerstats</button>
                   </Link>
                 </div>
 
-                <div className="columns">
+                <div className="columns bebas-font">
                   <div className="column has-text-centered">
-                    <h2 className="title is-4 is-uppercase">Powerstats</h2> 
+                    <h2 className="title is-4 bebas-font heading-name">Powerstats</h2> 
                     <div className="columns is-mobile">
 
                       <div className="column">Intelligence
@@ -101,6 +102,7 @@ function CharacterShow() {
         <hr/>  
       </div>
     </section>
+
   ) 
 }
 export default CharacterShow

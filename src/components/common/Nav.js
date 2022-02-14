@@ -23,7 +23,7 @@ function Nav() {
   //*(bulma styling on navbar - navbar-burger is mediaquery-ready for tablet,phones)
 
   return (
-    <nav className="navbar is-black"> 
+    <nav className="navbar is-black bebas-font heading-name"> 
       <div className="container">
         <div className="navbar-brand">
 
@@ -42,7 +42,7 @@ function Nav() {
               See all characters
             </Link>
             <Link to="/ProfileCompare" className="navbar-item">
-              Compare Powerstats!
+              Compare Powerstats
             </Link>
           </div>
         </div>

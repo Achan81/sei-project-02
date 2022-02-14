@@ -102,7 +102,7 @@ function App() {
 ```
 The next step and probably most important of all, was to test that we could communicate with the SuperHero API.  Following the API docs, the calling process was relatively straight forward. We tested API activity by creating a ‘client.http terminal’ to send requests. (first by calling all super heroes and all data related), with this step succeeding we were able to continue the build.
 
-```http
+```js
 @baseUrl = https://akabab.github.io/superhero-api/api/
 
 # GET ALL SUPERHEROES
@@ -123,6 +123,7 @@ Using Bulma, we created a black nav bar to show the pages to the site.
 Whilst building the Navbar, we also set up the mobile responsive side of things / burger menu.
 
 ![landingpage mobile responsive](/assets/01mobile.png)
+
 ```js
  return (
    <nav className="navbar is-black">
@@ -153,7 +154,7 @@ Whilst building the Navbar, we also set up the mobile responsive side of things 
  )
 ```
 
-# Character Index Page:
+## Character Index Page:
 Upon navigating to the Characters Index Page, an async function is used to get all data via try & catch statements. Axios will then deliver a promise to set all the requested data into state.
 
 ```js
@@ -169,10 +170,21 @@ Upon navigating to the Characters Index Page, an async function is used to get a
    getData()
  }, [])
 ```
-# Character Cards:
-To present characters on the Index Page, we created a function called CharacterCard.js to customise data to be shown on a card to be imported back to the CharacterIndex.js page.
+## Character Cards:
+To present characters on the Index Page, we created a function called CharacterCard.js to customise data to be shown on a card to be imported back to the CharacterIndex.js page. Each card would be defined by its own characterId in accordance to how the we set up the axios.
 
-Bulma CSS was used on this component to create a card to package the data in a presentable format.  Bulma uses its own className syntax to style and layout the class as shown below.
+```js
+//*Api Requests
+export function getAllCharacters() {
+  return axios.get(`${baseUrl}/all.json`)
+}
+
+export function getSingleCharacter(charactersCharacterId) {
+  return axios.get(`${baseUrl}/id/${charactersCharacterId}.json`)
+}
+```
+
+Bulma CSS was used on this component to create a card to package the data in a presentable format. Bulma uses its own className syntax to style and layout the class as shown below.
 
 ```js
   <Link to={`/characters/${characterId}`}>
@@ -202,12 +214,26 @@ Bulma CSS was used on this component to create a card to package the data in a p
 
 ![Character Index page](/assets/02index.png)
 
-## Character Show
-When on the Index Page, any of the Character Cards can be clicked on. This action will take the user to the CharacterShow.js page. The Character Show page is a enhanced infomation card. 
+## Character Show: 
+When on the Index Page, any of the Character Cards can be clicked on. Doing so will take the user to the selected CharacterShow.js page. The Character Show page presents the sole character chosen and has extra on that character. 
 
 ![Character Show page](/assets/03show.png)
 
+The data we chose to use was all picked out from the API and presented with the help of Bulma CSS also.
 
+```js 
+React.useEffect(() => {
+  const getData = async () => {
+    try {
+      const characterRes = await getSingleCharacter(characterId)
+      setCharacter(characterRes.data)
+    } catch {
+      setIsError(true)
+    }
+  }
+  getData()
+}, [characterId])
+```
 
 
 ## Challenges:
@@ -265,48 +291,3 @@ https://excalidraw.com/#json=463qRv9TCXy_sEpanEslb,aw3FAi-c9CwBaVlQHoh2VA
 - [ ] LIKE (local storage) *** if time
 - [ ] Revisit this project to work on Profile Compare function and ideally turn into TRUMPS game.
  
- 
-
-
-----
-
-### PREP / SKETCH
-https://excalidraw.com/#json=463qRv9TCXy_sEpanEslb,aw3FAi-c9CwBaVlQHoh2VA
-
-###DAY 01
-- [X] home page
-- [X] Navbar to navigate around
-
-- [X] Home Page, route url "/" - basic landing page
-- [X] Index page, router url "/characters",- shows ALL the character cards
-- [X] Show page, router url "/characters/:characterId" , shows a SINGLE character in more detail
-- [X] Error Handling on fetching, Show & Index page
-- [X] STYLING started.
-- [X] Improve Navbar, make it responsive - done but don't really like it, seems a bit empty - would like more content.
-
-###DAY02
-- [ ] FILTERS - By Publisher
-- [X] FILTERS - By Alignment (Good/Bad)
-- [X] FILTERS - Search bar by Name (multi case)  
-- [X] characterShow // height/width array [0] fix
-- [X] SORT ***bulma visual set up
-- [ ] PROFILE COMPARISONS ******** (TRUMPS)
-- [ ] select (LEFT), random generator 
-- [X] Favicon.png (Superman added)
-- [X] fonts (added / but hidden from A.Chan version)
-
-###DAY03
-- [X] FILTERS - By Publisher (Help needed because null object errored return)
-- [ ] PLAN A / PROFILE COMPARISONS PAGE set up (encountered difficulties... )
-- [X] PLAN B / POWER STATS to be added to INDEX CARDS to improve user experience  
-
-
-###TROUBLE SHOOTING
-- [ ] bulma styling on search and drop down - how to style so they stretch full width of page on desktop view, and same on mobile view. ~~
-- [X] CharacterShow - retrived data, how to space out height and width from bunching each other.
-- [X] loading="lazy" (does it work? see ).. maybe?
-
-###EXTRA 
-- [ ] LIKE (local storage) *** if time 
-- [ ] Revisit this project to work on Profile Compare function and ideally turn into TRUMPS game.
-
