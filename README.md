@@ -109,7 +109,7 @@ function App() {
  )
 }
 ```
-The next step and probably most important of all, was to test that we could communicate with the SuperHero API.  Following the API docs, the calling process was relatively straight forward. We tested API activity by creating a ‘client.http terminal’ to send requests. (first by calling all super heroes and all data related), with this step succeeding we were able to continue the build.
+The next step and probably most important of all, was to test that we could communicate with the SuperHero API.  Following the API docs, the calling process was relatively straight forward. We tested API activity by creating a ‘client.http terminal’ to send requests. (first by calling all superheroes and all data related), with this step succeeding we were able to continue the build.
 
 ```js
 @baseUrl = https://akabab.github.io/superhero-api/api/
@@ -123,7 +123,7 @@ GET {{baseUrl}}/id/1.json
 ```
 
 ## Landing Page:
-This was designed to be a clean looking page which would have the app name in the centre on top of a large image/collage of images to symbolise the SuperHeroes environment.
+This was designed to be a clean looking page which would have the app name in the centre on top of a large image/collage of images to symbolise the superheroes environment.
 
 ![landingpage](/assets/01home.png)
 
@@ -206,7 +206,7 @@ Upon navigating to the Characters Index Page, an async function is used to get a
     </section>
 ```
 ## Character Cards:
-To present characters on the Index Page, we created a function called CharacterCard.js to customise data to be shown on a card to be imported back to the CharacterIndex.js page. Each card would be defined by its own characterId in accordance to how the we set up the axios.
+To present characters on the Index Page, we created a function called CharacterCard.js to customise data to be shown on a card to be imported back to the CharacterIndex.js page. Each card would be defined by its own characterId.
 
 ```js
 //*Api Requests
@@ -274,13 +274,13 @@ React.useEffect(() => {
 With such a large index of unique characters, being able to find single characters with ease via filtering or searching directly by name is a key feature of this app. 
 
 * Filter by Publisher:\
-This method seemed appropriate for seperating out character by the types of comics/movies that they derive from  
+This method seemed appropriate for separating out character by the types of comics/movies that they derive from  
 
 * Filter by Alignment:\
-Probably the most obvious choice for character seperation as per the app's title - Heros & Villains (Good & Bad)
+Probably the most obvious choice for character separation as per the app's title - Heroes & Villains (Good & Bad)
 
 * Searching by Name:\
-The most direct route for finding your desired character is spelling out the name into the Search bar and let it filter only matching characters.
+The most direct route for finding your desired character is spelling out the name into the Search bar and letting it filter only matching characters.
 
 The above filters & name search were created as below...
 
@@ -345,7 +345,7 @@ The above filters & name search were created as below...
 
 ## Loading and Error Pages
 * "...Loading"\
-To help notify user that the page has not stalled (since we have a number of imaged that need to load)
+To help notify user that the page has not stalled (since we have a number of images that need to load)
 
 ```js
 function Loading() {
@@ -377,7 +377,7 @@ export default Error
   const publisherNull = null
   ``` 
 
-* Learning to use Bulma and override its syntax. Bulma is a fantastic CSS frame work for its ease of producing cards quickly and accurately, however I did find myself fighting with the frame work when trying to take control when using normal CSS
+* Learning to use Bulma and override its syntax. Bulma is a fantastic CSS framework for its ease of producing cards quickly and accurately, however I did find myself fighting with the frame work when trying to take control when using normal CSS
 
 * Working with this API, we found that the data was not always complete for each character and ruined the consistency of data shown on the app
 
