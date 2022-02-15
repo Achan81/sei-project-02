@@ -65,7 +65,7 @@ Use the clone button to download the app source code.
 ### Planning:
 After being randomly paired into a breakout room for this project briefing, our initial thought process was to spend 10 minutes each researching existing free to use API’s that were interesting for both Harry and myself. We found that many available API’s were not free, or were for limited use which was unfortunate but understandable.
 <br></br>
-We found on a 3rd party free SuperHero API (731 individual characters) which we felt was inline with our interests. [**SuperHero API**](https://akabab.github.io/superhero-api/api// "here") (Featuring multiple universes SuperHeroes open-source REST API).
+We found a 3rd party free SuperHero API (731 individual characters) which we felt was inline with our interests. [**SuperHero API**](https://akabab.github.io/superhero-api/api// "here") (Featuring multiple universes SuperHeroes open-source REST API).
 
 * We then studied the key deliverables needed for this project:
   * App to have multiple components (Index & Detail Show cards)
@@ -84,7 +84,7 @@ To visualise the build, Excalidraw was used to make some initial sketches to hel
 
 
 ## Build:
-Using Zoom and VS Code Live Share to pair code, we began by creating the basic components and BrowserRouter. By doing so, we were able to begin to see each page and test that each page connected up ok by adding filler text on each page (such as “Hello World”.
+Using Zoom and VS Code Live Share to pair code, we began by creating the basic components and BrowserRouter. By doing so, we were able to begin to see each page and test that each page connected up ok by adding filler text on each page (such as “Hello World”).
 
 ```js
 function App() {
@@ -250,7 +250,7 @@ Bulma CSS was used on this component to create a card to package the data in a p
 ![Character Index page](/assets/02index.png)
 
 ## Character Show: 
-When on the Index Page, any of the Character Cards can be clicked on. Doing so will take the user to the selected CharacterShow.js page. The Character Show page presents the sole character chosen and has extra on that character. 
+When on the Index Page, any of the Character Cards can be clicked on. Doing so will take the user to the selected CharacterShow.js page. The Character Show page presents the sole character chosen and has extra information on that character. 
 
 ![Character Show page](/assets/03show.png)
 
@@ -343,9 +343,9 @@ The above filters & name search were created as below...
     </div>
 ```
 
-## Loading and Error Pages
+## Loading and Error Pages:
 * "...Loading"\
-To help notify user that the page has not stalled (since we have a number of images that need to load)
+To help notify the user that the page has not stalled (since we have a number of images that need to load)
 
 ```js
 function Loading() {
@@ -355,7 +355,7 @@ export default Loading
 ```
 
 * "Oh no! something went wrong"\
-This will be useful if app fails to retrieve data from API 
+This will be useful if app fails to retrieve data from the API 
 
 ```js
 function Error() {
@@ -372,7 +372,7 @@ export default Error
 ```
 
 ## Challenges:
-* The filter & search functions were quite difficult to get right as it was a multi-use filter. Initially we were not able to return the filter for publishers. The main reason being that some of the characters did carry any publisher information. With help from our course tutor & teaching assistant, this was overcome with some simple tweaks to the code. NULL being one of the main reasons, and adding empty strings `''` to the filter value as well as `{publisherNull}` helped fix this...
+* The filter & search functions were quite difficult to get right as it was a multi-use filter. Initially we were not able to return the filter for publishers. The main reason being that some of the characters did not carry any publisher information. With help from our course tutor & teaching assistant, this was overcome with some simple tweaks to the code. NULL being one of the main reasons, and adding empty strings `''` to the filter value as well as `{publisherNull}` helped fix this...
   ```js 
   const publisherNull = null
   ``` 
@@ -387,8 +387,8 @@ export default Error
 ``` 
 
 ## Wins:
-* Working in a pair allowed me to be disciplined, organised and structured in my approach.
-* With our limited knowledge at this stage of the course, I'm happy to have a clean looking and functioning app.
+* Working in a pair allowed me to be disciplined, organised and structured in my approach
+* With our limited knowledge at this stage of the course, I'm happy to have a clean looking and functioning app
 * A mobile responsive app (especially the index page)
 ```js    
 <div className="column 
@@ -402,18 +402,18 @@ export default Error
 ![Demo responsive Index](/assets/d-responsive.gif)
 
 ## Bugs:
-* Probably not a bug, but something I couldn't overcome (my personal struggle with Bulma) The cards showns on the index page all have a black top with character name aligned to the left. I did not want this outcome.  Unfortunately, I was unable to get the text to align center whether using CSS or BULMA. Unlikely to be a bug, probably just me! 
+* Probably not a bug, but something I couldn't overcome (my personal struggle with Bulma) The cards shown on the index page all have a black top with character name aligned to the left. I did not want this outcome.  Unfortunately, I was unable to get the text to align center whether using CSS or BULMA. Unlikely to be a bug, probably just me! 
 
 ## Key Learnings:
 * Learning to pair code and communicate clearly within a team
 * Learning how to pull data and use it how we wanted it to be used 
 * Planning ahead especially when working in a team as it vastly improves communication
 * Familiarising with what we have learnt so far
-* Testing out Bulma framework
+* Testing out the Bulma framework
 
 ## Future Content and Improvements:
 * Trumps game on Profile Compare page ([excalidraw sketch](#excalidraw-sketch "Goto excalidraw sketch"))
-* show page buttons to navigate "previous" &  "next" page ([excalidraw sketch](#excalidraw-sketch "Goto excalidraw sketch"))
+* Show page buttons to navigate "previous" &  "next" page ([excalidraw sketch](#excalidraw-sketch "Goto excalidraw sketch"))
 
 
 
