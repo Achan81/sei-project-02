@@ -372,7 +372,7 @@ export default Error
 ```
 
 ## Challenges:
-* The filter & search functions were quite difficult to get right as it was a multi-use filter. Initially we were not able to return the filter for publishers. The main reason being that some of the characters did not carry any publisher information. With help from our course tutor & teaching assistant, this was overcome with some simple tweaks to the code. NULL being one of the main reasons, and adding empty strings `''` to the filter value as well as `{publisherNull}` helped fix this...
+* The filter & search functions were quite difficult to get right as it was a multi-use filter. Initially, we were not able to return the filter for publishers. The main reason being that some of the characters did not carry any publisher information. With help from our course tutor & teaching assistant, this was overcome with some simple tweaks to the code. NULL being one of the main reasons, and adding empty strings `''` to the filter value as well as `{publisherNull}` helped fix this...
   ```js 
   const publisherNull = null
   ``` 
