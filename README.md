@@ -413,6 +413,11 @@ export default Error
 * Trumps game on Profile Compare page ([excalidraw sketch](#excalidraw-sketch "Goto excalidraw sketch"))
 * Show page buttons to navigate "previous" &  "next" page ([excalidraw sketch](#excalidraw-sketch "Goto excalidraw sketch"))
 
+<br></br>
+<hr></hr>
+
+[Back to TOP](#overview "Goto overview")
+
 
 
  
