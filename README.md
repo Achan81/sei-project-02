@@ -79,9 +79,7 @@ To visualise the build, Excalidraw was used to make some initial sketches to hel
 
 
 ### excalidraw sketch:
-![excalidraw](/assets/havdb.png)
-
-
+![excalidraw screenshot](/assets/havdb-ex.png)
 
 ## Build:
 Using Zoom and VS Code Live Share to pair code, we began by creating the basic components and BrowserRouter. By doing so, we were able to begin to see each page and test that each page connected up ok by adding filler text on each page (such as “Hello World”).
